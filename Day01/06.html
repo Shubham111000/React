@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = 5 - "y";     // x.valueOf() is NaN, typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var x = "5" *"7";       // x.valueOf() is 35,  typeof x is a number
+document.writeln(x.valueOf());
+document.writeln(typeof(x))
+var p='3';
+document.writeln(p.valueOf());
+document.writeln(typeof(p))
+</script>
+</body>
+</html>
