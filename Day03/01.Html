@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Closure method using this we can use varible as a private static   
+    //in javaScript static keyword for varible comes much much later
+    let plus=function(){
+        var counter=0;
+        return function(){ return counter+=1;}
+    }()
+    document.writeln(plus());
+    document.writeln(plus());
+    document.writeln(plus());
+    document.writeln(plus());
+</script>
+</body>
+</html>
