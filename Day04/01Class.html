@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        class Account
+        { 
+           constructor(name,amt)
+          {
+          this.name=name;
+          this.balance=amt;
+          alert(typeof this.constructor)
+            }
+        }
+        var obj1=new Account("raj",20000);
+        console.log(obj1);
+        document.writeln(obj1 instanceof Account);//true
+        document.writeln(obj1 instanceof Object);//true
+        obj1.name="geeta";
+        console.log(obj1);
+        document.writeln(obj1); //object Object 
+        var obj2=new Account("Mona",50000);
+        document.writeln(obj2.name);
+        console.log(new Object());
+        
+        </script>
+        
+</body>
+</html>
