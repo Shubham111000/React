@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+
+        function callme() {
+            let s = document.getElementsByTagName("p");   //$(‘p’)
+            let l = s.length;
+            for (i = 0; i < l; i++) { alert(s[i].innerHTML) }
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="callme()" value="clickme" />
+    <p>Welcome<b> to world of</b> Dom</p>
+    <p>2nd p</p>
+    <p>3rd p</p>
+</body>
+
+</html>
