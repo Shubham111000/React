@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>template</title>
+    <script>
+        let arr = new Array() //do not use this way
+        //it represent object
+        arr[0] = 1;
+        arr[1] = "ket";
+        arr[2] = 'g';
+        arr[3] = 20.5;
+        alert(arr.length);
+        for (let i = 0; i < arr.length; i++)
+            document.write("<br>" + arr[i])
+
+        document.write("<hr/>");
+
+        //toString method overriden
+        document.write("<br/>" + arr);
+
+        document.write("<hr/>");
+
+        for (let list of arr)// introduce in new version
+            document.write("<br/>" + list)
+        for (let x in arr)//do not use
+            document.write(arr[x]);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
