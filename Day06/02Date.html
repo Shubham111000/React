@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s="2015-03-25"
+        var d = new Date(s);
+        document.write( d);
+        document.write( "<hr/>");
+        var msec = Date.parse("March 21, 2012");
+        document.write( msec);
+        document.write( "<hr/>");
+        var d = new Date(msec);
+        document.write( d);
+        
+        var sdate = Date.parse("Mar-21-2012");
+        var dat = new Date(sdate);
+        document.write( dat);
+        
+        </script>
+</body>
+</html>
+    
+    
+    
