@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script>
+        function call() {
+            var v = document.forms[0].elements.length
+            alert(document.forms.length);
+            alert(v)
+
+            for (let i = 0; i < v; i++)
+                document.getElementById("n").innerHTML += (document.forms[0].elements[i].value+"\t")
+        }
+        function call2() { alert("hi"); }
+    </script>
+</head>
+
+<body>
+    <p id="n">hello</p>
+
+    <fieldset >
+        <legend align="center">Forms[0]</legend>
+        <form>
+            <p id="n">hello</p>
+            <input type="radio" name="rd" value="better" />better
+            <input type="radio" name="rd" value="best" />best
+            <input type="button"  value="click" onclick="call(),call2()">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend align="center">Forms[1]</legend>
+        <form legend="Form[1]">
+            <p id="mm">hello</p>
+            <input type="radio" name="dd" value="yes" />yes
+            <input type="radio" name="dd" value="no" />no
+            <input type="button"  value="second frm" onclick="call(),call2()">
+        </form>
+    </fieldset>
+</body>
+
+</html>
