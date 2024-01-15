@@ -7,17 +7,14 @@
     <title>Document</title>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#btn").click(function () {
-                $("#test").hide();
-            });
-        });
+    $(document).ready(function() {
+    let p=$("p");
+    alert(p.length)
+    p.mouseover(function(){
+    p.text("<b>I have set value</b>");
+    });
+    });
     </script>
-</head>
-
-<body>
-    <p id="test">This is another paragraph.</p>
-    <button id="btn">Click me</button>
 </body>
 
 </html>

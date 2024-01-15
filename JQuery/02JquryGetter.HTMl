@@ -8,16 +8,19 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#btn").click(function () {
-                $("#test").hide();
-            });
+            $("#dd").click(function () {
+                var a = $("#dd").text();
+                alert(a);
+            })
+
         });
     </script>
 </head>
 
 <body>
-    <p id="test">This is another paragraph.</p>
-    <button id="btn">Click me</button>
+    <p id="dd">para 1</p>
+    <p>div para 1</p>
+    <p>div para 2</p>
 </body>
 
 </html>
