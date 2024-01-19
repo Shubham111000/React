@@ -20,7 +20,7 @@ namespace Product
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddCors(
-            (p) => p.AddDefaultPolicy(policy => policy.WithOrigins("*")
+    (p) => p.AddDefaultPolicy(policy => policy.WithOrigins("*")
               .AllowAnyHeader()
               .AllowAnyMethod()
 

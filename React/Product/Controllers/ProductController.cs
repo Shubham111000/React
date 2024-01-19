@@ -30,8 +30,8 @@ namespace Product.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product.Models.Product>> GetById_ActionResultOfT(int id)
         {
-            var employee = await _productRepository.GetProduct(id);
-            return employee == null ? NotFound() : employee;
+            var product = await _productRepository.GetProduct(id);
+            return product == null ? NotFound() : product;
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, Product.Models.Product product )
@@ -61,7 +61,7 @@ namespace Product.Controllers
         public async Task<ActionResult<Product.Models.Product>> PostProduct(Product.Models.Product product)
         {
             await _productRepository.Add(product);
-            return CreatedAtAction("PostEmployee", new { id = product.Id }, product);
+            return CreatedAtAction("PostProduct", new { id = product.Id }, product);
         }
 
         [HttpDelete("{id}")]
@@ -71,12 +71,11 @@ namespace Product.Controllers
             {
                 return NotFound();
             }
-            var employee = await _productRepository.Delete(id);
-            if (employee == null)
+            var product = await _productRepository.Delete(id);
+            if (product == null)
             {
                 return NotFound();
             }
-            await _productRepository.Delete(employee.Id);
             return NoContent();
         }
 
